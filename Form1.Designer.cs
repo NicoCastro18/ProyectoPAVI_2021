@@ -91,7 +91,7 @@ namespace Login
             this.lbContra.TabIndex = 5;
             this.lbContra.Text = "Contraseña";
             // 
-            // El cambio se realiza es en texto del Label de la contraseña, modificando el que estaba antes "password" por "contraseña", para no mezclar el idioma utilizado
+            // (Colaborador @franmunoz1) El cambio se realiza es en texto del Label de la contraseña, modificando el que estaba antes "password" por "contraseña", para no mezclar el idioma utilizado
             // frmLogin
             //  
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
