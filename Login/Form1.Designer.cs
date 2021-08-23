@@ -88,7 +88,8 @@ namespace Login
             this.lbContra.Name = "lbContra";
             this.lbContra.Size = new System.Drawing.Size(53, 13);
             this.lbContra.TabIndex = 5;
-            this.lbContra.Text = "Password";
+            this.lbContra.Text = "Contraseña";
+            // Cambiamos "Password" por "Contraseña" en el label para utilizar el mismo idioma y no generar confusiones
             this.lbContra.Click += new System.EventHandler(this.lbContra_Click);
             // 
             // frmLogin
