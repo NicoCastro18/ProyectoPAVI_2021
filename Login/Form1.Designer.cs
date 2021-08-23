@@ -104,7 +104,8 @@ namespace Login
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
             this.Name = "frmLogin";
-            this.Text = "Login";
+            this.Text = "Logeo";
+            // Cambiamos la palabraa "Login" por "Logeo" para mantener la concordancia de el idioma en el formulario.
             this.ResumeLayout(false);
             this.PerformLayout();
 
