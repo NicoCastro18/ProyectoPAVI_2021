@@ -89,10 +89,11 @@ namespace Login
             this.lbContra.Name = "lbContra";
             this.lbContra.Size = new System.Drawing.Size(53, 13);
             this.lbContra.TabIndex = 5;
-            this.lbContra.Text = "Password";
+            this.lbContra.Text = "Contraseña";
             // 
+            // El cambio se realiza es en texto del Label de la contraseña, modificando el que estaba antes "password" por "contraseña", para no mezclar el idioma utilizado
             // frmLogin
-            // 
+            //  
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 161);
