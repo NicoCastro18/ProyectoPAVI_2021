@@ -56,7 +56,7 @@ namespace Login
             // 
             this.btnCancelar.Location = new System.Drawing.Point(53, 114);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(55, 53);
+            this.btnCancelar.Size = new System.Drawing.Size(55, 30);
             //Modificacion del tamaño del boton cancelar, generando un conflicto
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
