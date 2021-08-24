@@ -56,7 +56,8 @@ namespace Login
             // 
             this.btnCancelar.Location = new System.Drawing.Point(53, 114);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(80, 40);
+            this.btnCancelar.Size = new System.Drawing.Size(55, 55);
+            //Modificacion del tamaño del boton cancelar, generando un conflicto
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -106,7 +107,6 @@ namespace Login
             this.Controls.Add(this.txtUsuario);
             this.Name = "frmLogin";
             this.Text = "Logeo";
-            // Cambiamos el label que decia "Login" anteriormente por "Logeo" para utilizar el mismo lenguaje y no generar confusiones ni ambiguedades
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
