@@ -106,6 +106,7 @@ namespace Login
             this.Controls.Add(this.txtUsuario);
             this.Name = "frmLogin";
             this.Text = "Logeo";
+            // Cambiamos el label que decia "Login" anteriormente por "Logeo" para utilizar el mismo lenguaje y no generar confusiones ni ambiguedades
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
