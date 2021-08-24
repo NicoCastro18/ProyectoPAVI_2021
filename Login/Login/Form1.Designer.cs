@@ -56,8 +56,7 @@ namespace Login
             // 
             this.btnCancelar.Location = new System.Drawing.Point(53, 114);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(55, 11);
-            //Modificacion del tamaño del boton cancelar, generando un conflicto
+            this.btnCancelar.Size = new System.Drawing.Size(58, 23);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -88,10 +87,9 @@ namespace Login
             this.lbContra.AutoSize = true;
             this.lbContra.Location = new System.Drawing.Point(50, 74);
             this.lbContra.Name = "lbContra";
-            this.lbContra.Size = new System.Drawing.Size(53, 13);
+            this.lbContra.Size = new System.Drawing.Size(61, 13);
             this.lbContra.TabIndex = 5;
             this.lbContra.Text = "Contraseña";
-            // Cambiamos el label que decia "Password" anteriormente por "Contraseña" para utilizar el mismo lenguaje y no generar confusiones ni ambiguedades 
             this.lbContra.Click += new System.EventHandler(this.lbContra_Click);
             // 
             // frmLogin
