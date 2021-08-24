@@ -1,0 +1,10 @@
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\bin\Debug\Login.exe.config
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\bin\Debug\Login.exe
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\bin\Debug\Login.pdb
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.frmLogin.resources
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.exe
+C:\Users\usuario\Desktop\Facu\2do Cuatri 2021\PAV\Proyecto\Login\Login\obj\Debug\Login.pdb
