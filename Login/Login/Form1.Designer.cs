@@ -32,7 +32,6 @@ namespace Login
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.lblUusario = new System.Windows.Forms.Label();
             this.lbContra = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -62,16 +61,6 @@ namespace Login
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(140, 114);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 3;
-            this.btnAceptar.Text = "Ingresar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
             // lblUusario
             // 
             this.lblUusario.AutoSize = true;
@@ -99,7 +88,6 @@ namespace Login
             this.ClientSize = new System.Drawing.Size(280, 161);
             this.Controls.Add(this.lbContra);
             this.Controls.Add(this.lblUusario);
-            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
@@ -116,7 +104,6 @@ namespace Login
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label lblUusario;
         private System.Windows.Forms.Label lbContra;
     }
