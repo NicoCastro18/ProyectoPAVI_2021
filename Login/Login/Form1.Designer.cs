@@ -34,6 +34,7 @@ namespace Login
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblUusario = new System.Windows.Forms.Label();
             this.lbContra = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -81,11 +82,22 @@ namespace Login
             this.lbContra.Text = "Contraseña";
             this.lbContra.Click += new System.EventHandler(this.lbContra_Click);
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(140, 114);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.Text = "Ingresar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 161);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lbContra);
             this.Controls.Add(this.lblUusario);
             this.Controls.Add(this.btnCancelar);
@@ -106,6 +118,7 @@ namespace Login
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblUusario;
         private System.Windows.Forms.Label lbContra;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }
 
