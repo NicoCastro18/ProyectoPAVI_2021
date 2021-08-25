@@ -47,7 +47,7 @@ namespace Login
             }
             if (this.txtUsuario.Text == this.usuario && this.txtContra.Text == this.contra)
             {
-                MessageBox.Show("Login confirmado", "Ingreso al sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Logueo confirmado", "Usted ingreso al sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
