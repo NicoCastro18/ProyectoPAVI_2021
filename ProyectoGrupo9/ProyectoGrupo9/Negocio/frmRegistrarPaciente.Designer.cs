@@ -39,7 +39,6 @@ namespace ProyectoGrupo9
             this.lblAltura = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblProvincia = new System.Windows.Forms.Label();
             this.lblCiudad = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@ namespace ProyectoGrupo9
             this.lblApellido = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -114,11 +114,11 @@ namespace ProyectoGrupo9
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.lblAltura);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lblProvincia);
             this.groupBox2.Controls.Add(this.lblCiudad);
@@ -160,14 +160,6 @@ namespace ProyectoGrupo9
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(267, 21);
             this.comboBox2.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(91, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 21);
-            this.comboBox1.TabIndex = 3;
             // 
             // label2
             // 
@@ -266,6 +258,13 @@ namespace ProyectoGrupo9
             this.lblNombre.Text = "Nombre";
             this.lblNombre.Click += new System.EventHandler(this.label1_Click);
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(91, 76);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(267, 20);
+            this.textBox7.TabIndex = 8;
+            // 
             // frmRegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,13 +300,13 @@ namespace ProyectoGrupo9
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Button btnCancelarIngreso;
         private System.Windows.Forms.Button btnAceptarIngreso;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
 

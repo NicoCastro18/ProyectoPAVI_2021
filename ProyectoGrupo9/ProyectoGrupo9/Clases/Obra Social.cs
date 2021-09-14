@@ -10,6 +10,10 @@ namespace ProyectoGrupo9.Clases
 {
     class Obra_Social
     {
+        public int Id_obraSocial { get; set; }
+        public string Nombre { get; set; }
+        public bool Borrado { get; set; }
+
         public DataTable RecuperarTodos()
         {
             string consulta = "select * from ObraSocial where borrado = 0 ORDER BY 2";

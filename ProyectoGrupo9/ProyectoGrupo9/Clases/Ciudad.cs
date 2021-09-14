@@ -10,6 +10,11 @@ namespace ProyectoGrupo9.Clases
 {
     class Ciudad
     {
+        public int Id_ciudad { get; set; }
+        public bool Borrado { get; set; }
+        public int Provincia { get; set; }
+        public string Nombre { get; set; }
+
         public DataTable RecuperarTodos()
         {
             string consulta = "select * from Ciudades where borrado = 0 ORDER BY 2";
