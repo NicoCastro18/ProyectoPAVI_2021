@@ -28,7 +28,10 @@ namespace ProyectoGrupo9.Negocio
 
         private void frmBorrado_Load(object sender, EventArgs e)
         {
+            this.CargarGrilla(dgvPacienteFiltrado, oPaciente.RecuperarTodos());
+            
             this.btnBuscarPorFiltro.Enabled = true;
+
         }
 
         private void CargarGrilla(DataGridView grilla, DataTable tabla)
@@ -58,7 +61,7 @@ namespace ProyectoGrupo9.Negocio
             dni = this.txtDniFiltro.Text;
 
             this.CargarGrilla(dgvPacienteFiltrado, oPaciente.RecuperarFiltrados(dni));
-            this.btnBuscarPorFiltro.Enabled = true;
+           
 
         }
 
