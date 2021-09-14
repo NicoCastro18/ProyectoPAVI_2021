@@ -26,7 +26,7 @@ namespace ProyectoGrupo9.Clases
 
         public DataTable RecuperarTodos()
         {
-            string consulta = "select * from Pacientes where borrado = 0 ORDER BY 2";
+            string consulta = "select * from Pacientes";
 
             BDHelper oDatos = new BDHelper();
             return oDatos.consultar(consulta);
@@ -34,7 +34,7 @@ namespace ProyectoGrupo9.Clases
 
         public DataTable RecuperarFiltrados(string dni)
         {
-            string consulta = "select * from Pacientes P where P.borrado = 0 and P.dni = " + dni;
+            string consulta = "select * from Pacientes P where  P.dni = " + dni;
             
             BDHelper oDatos = new BDHelper();
             return oDatos.consultar(consulta);
