@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProyectoGrupo9.Negocio;
 
 namespace ProyectoGrupo9.Clases
 {
@@ -27,6 +28,14 @@ namespace ProyectoGrupo9.Clases
         {
             string consulta = "select * from Pacientes where borrado = 0 ORDER BY 2";
 
+            BDHelper oDatos = new BDHelper();
+            return oDatos.consultar(consulta);
+        }
+
+        public DataTable RecuperarFiltrados(string dni)
+        {
+            string consulta = "select * from Pacientes P where P.borrado = 0 and P.dni = " + dni;
+            
             BDHelper oDatos = new BDHelper();
             return oDatos.consultar(consulta);
         }

@@ -93,7 +93,7 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox2.Controls.Add(this.dgvBugs);
             this.groupBox2.Location = new System.Drawing.Point(17, 117);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(752, 215);
+            this.groupBox2.Size = new System.Drawing.Size(752, 240);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pacientes";

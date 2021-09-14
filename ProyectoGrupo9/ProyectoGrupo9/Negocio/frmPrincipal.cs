@@ -62,5 +62,14 @@ namespace ProyectoGrupo9.Negocio
 
             cb.Dispose();
         }
+
+        private void borrarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBorrado cb;
+            cb = new frmBorrado();
+            cb.ShowDialog();
+
+            cb.Dispose(); 
+        }
     }
 }

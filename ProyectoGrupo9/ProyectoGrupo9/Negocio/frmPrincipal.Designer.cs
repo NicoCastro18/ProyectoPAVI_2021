@@ -34,9 +34,9 @@ namespace ProyectoGrupo9.Negocio
             this.registroPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,20 @@ namespace ProyectoGrupo9.Negocio
             this.datosPacienteToolStripMenuItem.Text = "Datos Paciente";
             this.datosPacienteToolStripMenuItem.Click += new System.EventHandler(this.datosPacienteToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // borrarPacienteToolStripMenuItem
+            // 
+            this.borrarPacienteToolStripMenuItem.Name = "borrarPacienteToolStripMenuItem";
+            this.borrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.borrarPacienteToolStripMenuItem.Text = "Borrar Paciente";
+            this.borrarPacienteToolStripMenuItem.Click += new System.EventHandler(this.borrarPacienteToolStripMenuItem_Click);
+            // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -91,19 +105,6 @@ namespace ProyectoGrupo9.Negocio
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
-            // 
-            // borrarPacienteToolStripMenuItem
-            // 
-            this.borrarPacienteToolStripMenuItem.Name = "borrarPacienteToolStripMenuItem";
-            this.borrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.borrarPacienteToolStripMenuItem.Text = "Borrar Paciente";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -129,8 +130,8 @@ namespace ProyectoGrupo9.Negocio
         private System.Windows.Forms.ToolStripMenuItem registroPacienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosPacienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem borrarPacienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }

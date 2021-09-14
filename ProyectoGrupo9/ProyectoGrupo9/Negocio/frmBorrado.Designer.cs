@@ -30,7 +30,12 @@ namespace ProyectoGrupo9.Negocio
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvBugs = new System.Windows.Forms.DataGridView();
+            this.dgvPacienteFiltrado = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarPorFiltro = new System.Windows.Forms.Button();
+            this.txtDniFiltro = new System.Windows.Forms.TextBox();
+            this.lblFiltroDni = new System.Windows.Forms.Label();
+            this.colum_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,33 +43,31 @@ namespace ProyectoGrupo9.Negocio
             this.colum_Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_ObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_Calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colum_Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_Mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_fechaNaci = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBuscarPorFiltro = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblFiltroDni = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBugs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacienteFiltrado)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgvBugs);
+            this.groupBox2.Controls.Add(this.dgvPacienteFiltrado);
             this.groupBox2.Location = new System.Drawing.Point(18, 104);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(752, 215);
+            this.groupBox2.Size = new System.Drawing.Size(871, 248);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pacientes";
             // 
-            // dgvBugs
+            // dgvPacienteFiltrado
             // 
-            this.dgvBugs.AllowUserToAddRows = false;
-            this.dgvBugs.AllowUserToDeleteRows = false;
-            this.dgvBugs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBugs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPacienteFiltrado.AllowUserToAddRows = false;
+            this.dgvPacienteFiltrado.AllowUserToDeleteRows = false;
+            this.dgvPacienteFiltrado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacienteFiltrado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colum_ID,
             this.colum_DNI,
             this.colum_Nombre,
             this.colum_Apellido,
@@ -72,13 +75,59 @@ namespace ProyectoGrupo9.Negocio
             this.colum_Ciudad,
             this.colum_ObraSocial,
             this.colum_Calle,
+            this.colum_Altura,
             this.colum_Mail,
             this.colum_fechaNaci});
-            this.dgvBugs.Location = new System.Drawing.Point(6, 19);
-            this.dgvBugs.Name = "dgvBugs";
-            this.dgvBugs.ReadOnly = true;
-            this.dgvBugs.Size = new System.Drawing.Size(740, 170);
-            this.dgvBugs.TabIndex = 2;
+            this.dgvPacienteFiltrado.Location = new System.Drawing.Point(6, 19);
+            this.dgvPacienteFiltrado.Name = "dgvPacienteFiltrado";
+            this.dgvPacienteFiltrado.ReadOnly = true;
+            this.dgvPacienteFiltrado.Size = new System.Drawing.Size(859, 194);
+            this.dgvPacienteFiltrado.TabIndex = 2;
+            this.dgvPacienteFiltrado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBugs_CellContentClick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnBuscarPorFiltro);
+            this.groupBox1.Controls.Add(this.txtDniFiltro);
+            this.groupBox1.Controls.Add(this.lblFiltroDni);
+            this.groupBox1.Location = new System.Drawing.Point(18, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(746, 93);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros de Busqueda";
+            // 
+            // btnBuscarPorFiltro
+            // 
+            this.btnBuscarPorFiltro.Location = new System.Drawing.Point(33, 56);
+            this.btnBuscarPorFiltro.Name = "btnBuscarPorFiltro";
+            this.btnBuscarPorFiltro.Size = new System.Drawing.Size(95, 21);
+            this.btnBuscarPorFiltro.TabIndex = 2;
+            this.btnBuscarPorFiltro.Text = "Buscar";
+            this.btnBuscarPorFiltro.UseVisualStyleBackColor = true;
+            // 
+            // txtDniFiltro
+            // 
+            this.txtDniFiltro.Location = new System.Drawing.Point(150, 22);
+            this.txtDniFiltro.Name = "txtDniFiltro";
+            this.txtDniFiltro.Size = new System.Drawing.Size(314, 20);
+            this.txtDniFiltro.TabIndex = 1;
+            // 
+            // lblFiltroDni
+            // 
+            this.lblFiltroDni.AutoSize = true;
+            this.lblFiltroDni.Location = new System.Drawing.Point(38, 29);
+            this.lblFiltroDni.Name = "lblFiltroDni";
+            this.lblFiltroDni.Size = new System.Drawing.Size(72, 13);
+            this.lblFiltroDni.TabIndex = 0;
+            this.lblFiltroDni.Text = "Filtro por DNI:";
+            // 
+            // colum_ID
+            // 
+            this.colum_ID.HeaderText = "ID";
+            this.colum_ID.Name = "colum_ID";
+            this.colum_ID.ReadOnly = true;
+            this.colum_ID.Width = 40;
             // 
             // colum_DNI
             // 
@@ -126,6 +175,12 @@ namespace ProyectoGrupo9.Negocio
             this.colum_Calle.Name = "colum_Calle";
             this.colum_Calle.ReadOnly = true;
             // 
+            // colum_Altura
+            // 
+            this.colum_Altura.HeaderText = "Altura Calle";
+            this.colum_Altura.Name = "colum_Altura";
+            this.colum_Altura.ReadOnly = true;
+            // 
             // colum_Mail
             // 
             this.colum_Mail.HeaderText = "Mail";
@@ -139,54 +194,18 @@ namespace ProyectoGrupo9.Negocio
             this.colum_fechaNaci.Name = "colum_fechaNaci";
             this.colum_fechaNaci.ReadOnly = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnBuscarPorFiltro);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lblFiltroDni);
-            this.groupBox1.Location = new System.Drawing.Point(18, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(746, 93);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Filtros de Busqueda";
-            // 
-            // btnBuscarPorFiltro
-            // 
-            this.btnBuscarPorFiltro.Location = new System.Drawing.Point(33, 56);
-            this.btnBuscarPorFiltro.Name = "btnBuscarPorFiltro";
-            this.btnBuscarPorFiltro.Size = new System.Drawing.Size(95, 21);
-            this.btnBuscarPorFiltro.TabIndex = 2;
-            this.btnBuscarPorFiltro.Text = "Buscar";
-            this.btnBuscarPorFiltro.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(150, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // lblFiltroDni
-            // 
-            this.lblFiltroDni.AutoSize = true;
-            this.lblFiltroDni.Location = new System.Drawing.Point(38, 29);
-            this.lblFiltroDni.Name = "lblFiltroDni";
-            this.lblFiltroDni.Size = new System.Drawing.Size(72, 13);
-            this.lblFiltroDni.TabIndex = 0;
-            this.lblFiltroDni.Text = "Filtro por DNI:";
-            // 
             // frmBorrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 324);
+            this.ClientSize = new System.Drawing.Size(901, 364);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmBorrado";
             this.Text = "frmBorrado";
+            this.Load += new System.EventHandler(this.frmBorrado_Load);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBugs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacienteFiltrado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -196,7 +215,12 @@ namespace ProyectoGrupo9.Negocio
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvBugs;
+        private System.Windows.Forms.DataGridView dgvPacienteFiltrado;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnBuscarPorFiltro;
+        private System.Windows.Forms.TextBox txtDniFiltro;
+        private System.Windows.Forms.Label lblFiltroDni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colum_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_DNI;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_Apellido;
@@ -204,11 +228,8 @@ namespace ProyectoGrupo9.Negocio
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_Ciudad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_ObraSocial;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_Calle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colum_Altura;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_Mail;
         private System.Windows.Forms.DataGridViewTextBoxColumn colum_fechaNaci;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnBuscarPorFiltro;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblFiltroDni;
     }
 }
