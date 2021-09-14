@@ -35,8 +35,6 @@ namespace ProyectoGrupo9.Negocio
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +43,6 @@ namespace ProyectoGrupo9.Negocio
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem,
             this.modificarToolStripMenuItem,
-            this.eliminarToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -73,15 +70,15 @@ namespace ProyectoGrupo9.Negocio
             this.modificarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.datosPacienteToolStripMenuItem});
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.modificarToolStripMenuItem.Text = "Actualizar";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.modificarToolStripMenuItem.Text = "Consultar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // datosPacienteToolStripMenuItem
             // 
             this.datosPacienteToolStripMenuItem.Name = "datosPacienteToolStripMenuItem";
             this.datosPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.datosPacienteToolStripMenuItem.Text = "Datos Paciente";
+            this.datosPacienteToolStripMenuItem.Text = "Buscar";
             this.datosPacienteToolStripMenuItem.Click += new System.EventHandler(this.datosPacienteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
@@ -90,21 +87,6 @@ namespace ProyectoGrupo9.Negocio
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // borrarPacienteToolStripMenuItem
-            // 
-            this.borrarPacienteToolStripMenuItem.Name = "borrarPacienteToolStripMenuItem";
-            this.borrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.borrarPacienteToolStripMenuItem.Text = "Borrar Paciente";
-            this.borrarPacienteToolStripMenuItem.Click += new System.EventHandler(this.borrarPacienteToolStripMenuItem_Click);
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.borrarPacienteToolStripMenuItem});
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // frmPrincipal
             // 
@@ -131,7 +113,5 @@ namespace ProyectoGrupo9.Negocio
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosPacienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem borrarPacienteToolStripMenuItem;
     }
 }

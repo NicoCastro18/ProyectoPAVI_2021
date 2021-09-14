@@ -56,20 +56,14 @@ namespace ProyectoGrupo9.Negocio
 
         private void datosPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmActualizacion cb;
-            cb = new frmActualizacion();
+
+            frmConsulta cb;
+            cb = new frmConsulta();
             cb.ShowDialog();
 
             cb.Dispose();
         }
 
-        private void borrarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmConsulta cb;
-            cb = new frmConsulta();
-            cb.ShowDialog();
-
-            cb.Dispose(); 
-        }
+        
     }
 }
