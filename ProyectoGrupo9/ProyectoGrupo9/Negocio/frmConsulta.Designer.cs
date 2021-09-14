@@ -30,6 +30,8 @@ namespace ProyectoGrupo9.Negocio
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.dgvPacienteFiltrado = new System.Windows.Forms.DataGridView();
             this.colum_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colum_DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,8 +48,6 @@ namespace ProyectoGrupo9.Negocio
             this.btnBuscarPorFiltro = new System.Windows.Forms.Button();
             this.txtDniFiltro = new System.Windows.Forms.TextBox();
             this.lblFiltroDni = new System.Windows.Forms.Label();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacienteFiltrado)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -64,6 +64,26 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pacientes";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(725, 219);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 4;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(630, 219);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvPacienteFiltrado
             // 
@@ -199,33 +219,14 @@ namespace ProyectoGrupo9.Negocio
             this.lblFiltroDni.TabIndex = 0;
             this.lblFiltroDni.Text = "Filtro por DNI:";
             // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(630, 219);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 3;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Location = new System.Drawing.Point(725, 219);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 4;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            // 
-            // frmBorrado
+            // frmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 364);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmBorrado";
+            this.Name = "frmConsulta";
             this.Text = "frmConsulta";
             this.Load += new System.EventHandler(this.frmBorrado_Load);
             this.groupBox2.ResumeLayout(false);

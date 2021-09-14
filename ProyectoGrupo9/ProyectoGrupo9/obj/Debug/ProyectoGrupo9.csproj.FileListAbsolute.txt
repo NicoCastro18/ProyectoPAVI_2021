@@ -17,8 +17,6 @@ D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\bin\Debug\ProyectoGrup
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\bin\Debug\ProyectoGrupo9.exe
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\bin\Debug\ProyectoGrupo9.pdb
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.csproj.AssemblyReference.cache
-D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmActualizacion.resources
-D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmBorrado.resources
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmLogin.resources
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmModificacionParticular.resources
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmPrincipal.resources
@@ -28,3 +26,4 @@ D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrup
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.csproj.CoreCompileInputs.cache
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.exe
 D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.pdb
+D:\GitHub\ProyectoPAVI_2021\ProyectoGrupo9\ProyectoGrupo9\obj\Debug\ProyectoGrupo9.Negocio.frmConsulta.resources
