@@ -34,7 +34,7 @@ namespace ProyectoGrupo9.Clases
 
         public DataTable RecuperarFiltrados(string dni)
         {
-            string consulta = "select * from Pacientes P where  P.dni = " + dni;
+            string consulta = "select * from Pacientes P where P.borrado = 0 and P.dni = " + dni;
             
             BDHelper oDatos = new BDHelper();
             return oDatos.consultar(consulta);
