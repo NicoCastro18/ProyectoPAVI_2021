@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Clases\Ciudad.cs" />
     <Compile Include="Clases\Empleado.cs" />
-    <Compile Include="Clases\Obra Social.cs" />
+    <Compile Include="Clases\Obra_Social.cs" />
     <Compile Include="Clases\Paciente.cs" />
     <Compile Include="Clases\Provincia.cs" />
     <Compile Include="Datos\BDHelper.cs" />

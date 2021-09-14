@@ -38,7 +38,7 @@ namespace ProyectoGrupo9
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblAltura = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboProvincia = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblProvincia = new System.Windows.Forms.Label();
             this.lblCiudad = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace ProyectoGrupo9
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboObra = new System.Windows.Forms.ComboBox();
             this.lblObraSocial = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,7 +60,7 @@ namespace ProyectoGrupo9
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblObraSocial);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cboObra);
             this.groupBox1.Controls.Add(this.btnCancelarIngreso);
             this.groupBox1.Controls.Add(this.btnAceptarIngreso);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -90,6 +90,7 @@ namespace ProyectoGrupo9
             this.btnCancelarIngreso.TabIndex = 13;
             this.btnCancelarIngreso.Text = "Cancelar";
             this.btnCancelarIngreso.UseVisualStyleBackColor = true;
+            this.btnCancelarIngreso.Click += new System.EventHandler(this.btnCancelarIngreso_Click);
             // 
             // btnAceptarIngreso
             // 
@@ -122,7 +123,7 @@ namespace ProyectoGrupo9
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.lblAltura);
             this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cboProvincia);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lblProvincia);
             this.groupBox2.Controls.Add(this.lblCiudad);
@@ -157,13 +158,13 @@ namespace ProyectoGrupo9
             this.textBox4.Size = new System.Drawing.Size(136, 20);
             this.textBox4.TabIndex = 5;
             // 
-            // comboBox2
+            // cboProvincia
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(91, 34);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(267, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cboProvincia.FormattingEnabled = true;
+            this.cboProvincia.Location = new System.Drawing.Point(91, 34);
+            this.cboProvincia.Name = "cboProvincia";
+            this.cboProvincia.Size = new System.Drawing.Size(267, 21);
+            this.cboProvincia.TabIndex = 4;
             // 
             // label2
             // 
@@ -269,13 +270,13 @@ namespace ProyectoGrupo9
             this.textBox7.Size = new System.Drawing.Size(267, 20);
             this.textBox7.TabIndex = 8;
             // 
-            // comboBox1
+            // cboObra
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(161, 250);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(244, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cboObra.FormattingEnabled = true;
+            this.cboObra.Location = new System.Drawing.Point(161, 250);
+            this.cboObra.Name = "cboObra";
+            this.cboObra.Size = new System.Drawing.Size(244, 21);
+            this.cboObra.TabIndex = 9;
             // 
             // lblObraSocial
             // 
@@ -320,7 +321,7 @@ namespace ProyectoGrupo9
         private System.Windows.Forms.Label lblProvincia;
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboProvincia;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.TextBox textBox5;
@@ -329,7 +330,7 @@ namespace ProyectoGrupo9
         private System.Windows.Forms.Button btnAceptarIngreso;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label lblObraSocial;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboObra;
     }
 }
 
