@@ -8,6 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using ProyectoGrupo9.Datos;
+
+
+
 
 namespace ProyectoGrupo9
 {
@@ -15,11 +20,15 @@ namespace ProyectoGrupo9
     {
         Provincia oProvincia = new Provincia();
         Obra_Social oObraSocial = new Obra_Social();
+        Ciudad oCiudad = new Ciudad();
 
         public frmRegistrarPaciente()
         {
             InitializeComponent();
         }
+        
+        
+
 
         private void CargarCombo(ComboBox combo, DataTable tabla)
         {
@@ -42,8 +51,10 @@ namespace ProyectoGrupo9
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             this.CargarCombo(cboObra, oObraSocial.RecuperarTodos());
             this.CargarCombo(cboProvincia, oProvincia.RecuperarTodos());
+            this.CargarCombo(cboCiudades, oCiudad.RecuperarTodos());
 
             this.btnAceptarIngreso.Enabled = true;
             this.btnCancelarIngreso.Enabled = true;
@@ -93,6 +104,22 @@ namespace ProyectoGrupo9
         private void btnCancelarIngreso_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAceptarIngreso_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"server=DESKTOP-O6JL5EQ\SQLEXPRESS; database=Proyecto Pav;integrated security=true");
+            conexion.Open();
+            string consulta = "INSERT INTO Pacientes (nombre,apellido,dni,mail,obra_social,provincia,ciudad,calle,altura_calle) VALUES ('" + textBox1.Text + "', '" + textBox2.Text + "', " + textBox3.Text + ", '" + textBox6.Text + "', '" + cboObra.Text + "', '"+ cboProvincia.Text+ "', '"+ cboCiudades.Text+ "', '" + textBox4.Text + "', " + textBox5.Text + ")";
+            SqlCommand agregado = new SqlCommand(consulta, conexion);
+            agregado.ExecuteNonQuery();
+            MessageBox.Show("Se agrego el paciente correctamente");
+            conexion.Close();
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

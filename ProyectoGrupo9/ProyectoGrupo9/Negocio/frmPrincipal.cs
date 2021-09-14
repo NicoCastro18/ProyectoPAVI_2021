@@ -53,5 +53,14 @@ namespace ProyectoGrupo9.Negocio
         {
 
         }
+
+        private void datosPacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmActualizacion cb;
+            cb = new frmActualizacion();
+            cb.ShowDialog();
+
+            cb.Dispose();
+        }
     }
 }

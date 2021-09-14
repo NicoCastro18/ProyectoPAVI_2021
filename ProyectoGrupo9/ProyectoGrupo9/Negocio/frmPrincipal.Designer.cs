@@ -80,8 +80,9 @@ namespace ProyectoGrupo9.Negocio
             // datosPacienteToolStripMenuItem
             // 
             this.datosPacienteToolStripMenuItem.Name = "datosPacienteToolStripMenuItem";
-            this.datosPacienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.datosPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.datosPacienteToolStripMenuItem.Text = "Datos Paciente";
+            this.datosPacienteToolStripMenuItem.Click += new System.EventHandler(this.datosPacienteToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 

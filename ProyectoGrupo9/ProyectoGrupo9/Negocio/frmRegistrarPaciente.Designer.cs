@@ -50,17 +50,15 @@ namespace ProyectoGrupo9
             this.lblApellido = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.cboObra = new System.Windows.Forms.ComboBox();
             this.lblObraSocial = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cboCiudades = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.lblObraSocial);
             this.groupBox1.Controls.Add(this.cboObra);
             this.groupBox1.Controls.Add(this.btnCancelarIngreso);
@@ -86,7 +84,7 @@ namespace ProyectoGrupo9
             // 
             // btnCancelarIngreso
             // 
-            this.btnCancelarIngreso.Location = new System.Drawing.Point(273, 481);
+            this.btnCancelarIngreso.Location = new System.Drawing.Point(247, 481);
             this.btnCancelarIngreso.Name = "btnCancelarIngreso";
             this.btnCancelarIngreso.Size = new System.Drawing.Size(81, 20);
             this.btnCancelarIngreso.TabIndex = 13;
@@ -96,12 +94,13 @@ namespace ProyectoGrupo9
             // 
             // btnAceptarIngreso
             // 
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(360, 480);
+            this.btnAceptarIngreso.Location = new System.Drawing.Point(334, 481);
             this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(77, 21);
+            this.btnAceptarIngreso.Size = new System.Drawing.Size(97, 21);
             this.btnAceptarIngreso.TabIndex = 12;
-            this.btnAceptarIngreso.Text = "Aceptar";
+            this.btnAceptarIngreso.Text = "Agregar Paciente";
             this.btnAceptarIngreso.UseVisualStyleBackColor = true;
+            this.btnAceptarIngreso.Click += new System.EventHandler(this.btnAceptarIngreso_Click);
             // 
             // textBox6
             // 
@@ -121,7 +120,7 @@ namespace ProyectoGrupo9
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.cboCiudades);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.lblAltura);
             this.groupBox2.Controls.Add(this.textBox4);
@@ -254,6 +253,7 @@ namespace ProyectoGrupo9
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(244, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // lblNombre
             // 
@@ -264,13 +264,6 @@ namespace ProyectoGrupo9
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             this.lblNombre.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(91, 76);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(267, 20);
-            this.textBox7.TabIndex = 8;
             // 
             // cboObra
             // 
@@ -289,14 +282,13 @@ namespace ProyectoGrupo9
             this.lblObraSocial.TabIndex = 14;
             this.lblObraSocial.Text = "Obra Social";
             // 
-            // button1
+            // cboCiudades
             // 
-            this.button1.Location = new System.Drawing.Point(21, 484);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "SALIR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cboCiudades.FormattingEnabled = true;
+            this.cboCiudades.Location = new System.Drawing.Point(91, 75);
+            this.cboCiudades.Name = "cboCiudades";
+            this.cboCiudades.Size = new System.Drawing.Size(267, 21);
+            this.cboCiudades.TabIndex = 8;
             // 
             // frmRegistrarPaciente
             // 
@@ -339,10 +331,9 @@ namespace ProyectoGrupo9
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Button btnCancelarIngreso;
         private System.Windows.Forms.Button btnAceptarIngreso;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label lblObraSocial;
         private System.Windows.Forms.ComboBox cboObra;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cboCiudades;
     }
 }
 
