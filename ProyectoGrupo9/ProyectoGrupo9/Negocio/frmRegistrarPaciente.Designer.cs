@@ -51,12 +51,16 @@ namespace ProyectoGrupo9
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblObraSocial = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblObraSocial);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.btnCancelarIngreso);
             this.groupBox1.Controls.Add(this.btnAceptarIngreso);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -72,7 +76,7 @@ namespace ProyectoGrupo9
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Location = new System.Drawing.Point(14, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(428, 485);
+            this.groupBox1.Size = new System.Drawing.Size(437, 507);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Datos Pacientes";
@@ -80,7 +84,7 @@ namespace ProyectoGrupo9
             // 
             // btnCancelarIngreso
             // 
-            this.btnCancelarIngreso.Location = new System.Drawing.Point(244, 458);
+            this.btnCancelarIngreso.Location = new System.Drawing.Point(273, 481);
             this.btnCancelarIngreso.Name = "btnCancelarIngreso";
             this.btnCancelarIngreso.Size = new System.Drawing.Size(81, 20);
             this.btnCancelarIngreso.TabIndex = 13;
@@ -89,7 +93,7 @@ namespace ProyectoGrupo9
             // 
             // btnAceptarIngreso
             // 
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(336, 458);
+            this.btnAceptarIngreso.Location = new System.Drawing.Point(360, 480);
             this.btnAceptarIngreso.Name = "btnAceptarIngreso";
             this.btnAceptarIngreso.Size = new System.Drawing.Size(77, 21);
             this.btnAceptarIngreso.TabIndex = 12;
@@ -122,7 +126,7 @@ namespace ProyectoGrupo9
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lblProvincia);
             this.groupBox2.Controls.Add(this.lblCiudad);
-            this.groupBox2.Location = new System.Drawing.Point(23, 251);
+            this.groupBox2.Location = new System.Drawing.Point(21, 277);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(396, 198);
             this.groupBox2.TabIndex = 9;
@@ -265,11 +269,28 @@ namespace ProyectoGrupo9
             this.textBox7.Size = new System.Drawing.Size(267, 20);
             this.textBox7.TabIndex = 8;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(161, 250);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(244, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // lblObraSocial
+            // 
+            this.lblObraSocial.AutoSize = true;
+            this.lblObraSocial.Location = new System.Drawing.Point(33, 253);
+            this.lblObraSocial.Name = "lblObraSocial";
+            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
+            this.lblObraSocial.TabIndex = 14;
+            this.lblObraSocial.Text = "Obra Social";
+            // 
             // frmRegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 500);
+            this.ClientSize = new System.Drawing.Size(463, 519);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmRegistrarPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -307,6 +328,8 @@ namespace ProyectoGrupo9
         private System.Windows.Forms.Button btnCancelarIngreso;
         private System.Windows.Forms.Button btnAceptarIngreso;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label lblObraSocial;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGrupo9.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace ProyectoGrupo9
 {
     public partial class frmRegistrarPaciente : Form
     {
-
+        Provincia oProvincia = new Provincia();
 
         public frmRegistrarPaciente()
         {
