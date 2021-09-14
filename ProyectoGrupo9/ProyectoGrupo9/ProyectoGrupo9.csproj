@@ -52,17 +52,11 @@
     <Compile Include="Clases\Paciente.cs" />
     <Compile Include="Clases\Provincia.cs" />
     <Compile Include="Datos\BDHelper.cs" />
-    <Compile Include="Negocio\frmActualizacion.cs">
+    <Compile Include="Negocio\frmConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Negocio\frmActualizacion.Designer.cs">
-      <DependentUpon>frmActualizacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\frmBorrado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Negocio\frmBorrado.Designer.cs">
-      <DependentUpon>frmBorrado.cs</DependentUpon>
+    <Compile Include="Negocio\frmConsulta.Designer.cs">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\frmModificacionParticular.cs">
       <SubType>Form</SubType>
@@ -90,11 +84,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Negocio\frmActualizacion.resx">
-      <DependentUpon>frmActualizacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Negocio\frmBorrado.resx">
-      <DependentUpon>frmBorrado.cs</DependentUpon>
+    <EmbeddedResource Include="Negocio\frmConsulta.resx">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Negocio\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

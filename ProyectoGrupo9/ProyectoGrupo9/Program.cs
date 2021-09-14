@@ -20,7 +20,7 @@ namespace ProyectoGrupo9
             //Application.Run(new frmLogin());
             //Application.Run(new frmPrincipal());
             //Application.Run(new frmRegistrarPaciente());
-            Application.Run(new frmBorrado());
+            Application.Run(new frmConsulta());
         }
     }
 }

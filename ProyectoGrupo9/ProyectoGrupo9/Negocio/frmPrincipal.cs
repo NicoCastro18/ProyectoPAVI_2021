@@ -65,8 +65,8 @@ namespace ProyectoGrupo9.Negocio
 
         private void borrarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBorrado cb;
-            cb = new frmBorrado();
+            frmConsulta cb;
+            cb = new frmConsulta();
             cb.ShowDialog();
 
             cb.Dispose(); 
