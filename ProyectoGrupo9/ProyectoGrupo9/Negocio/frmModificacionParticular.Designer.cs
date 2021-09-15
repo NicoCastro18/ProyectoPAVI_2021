@@ -30,6 +30,8 @@ namespace ProyectoGrupo9.Negocio
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboObra = new System.Windows.Forms.ComboBox();
+            this.lblObraSocial = new System.Windows.Forms.Label();
             this.btnCancelarCambios = new System.Windows.Forms.Button();
             this.btnConfirmarCambios = new System.Windows.Forms.Button();
             this.txtMail = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@ namespace ProyectoGrupo9.Negocio
             this.lblApellido = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblObraSocial = new System.Windows.Forms.Label();
-            this.cboObra = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +82,23 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox1.Text = "Modificacion Datos Paciente";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // cboObra
+            // 
+            this.cboObra.FormattingEnabled = true;
+            this.cboObra.Location = new System.Drawing.Point(81, 211);
+            this.cboObra.Name = "cboObra";
+            this.cboObra.Size = new System.Drawing.Size(244, 21);
+            this.cboObra.TabIndex = 16;
+            // 
+            // lblObraSocial
+            // 
+            this.lblObraSocial.AutoSize = true;
+            this.lblObraSocial.Location = new System.Drawing.Point(6, 219);
+            this.lblObraSocial.Name = "lblObraSocial";
+            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
+            this.lblObraSocial.TabIndex = 15;
+            this.lblObraSocial.Text = "Obra Social";
+            // 
             // btnCancelarCambios
             // 
             this.btnCancelarCambios.Location = new System.Drawing.Point(244, 458);
@@ -90,6 +107,7 @@ namespace ProyectoGrupo9.Negocio
             this.btnCancelarCambios.TabIndex = 13;
             this.btnCancelarCambios.Text = "Cancelar";
             this.btnCancelarCambios.UseVisualStyleBackColor = true;
+            this.btnCancelarCambios.Click += new System.EventHandler(this.btnCancelarCambios_Click);
             // 
             // btnConfirmarCambios
             // 
@@ -267,23 +285,6 @@ namespace ProyectoGrupo9.Negocio
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = " Nombre";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
-            // 
-            // lblObraSocial
-            // 
-            this.lblObraSocial.AutoSize = true;
-            this.lblObraSocial.Location = new System.Drawing.Point(6, 219);
-            this.lblObraSocial.Name = "lblObraSocial";
-            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
-            this.lblObraSocial.TabIndex = 15;
-            this.lblObraSocial.Text = "Obra Social";
-            // 
-            // cboObra
-            // 
-            this.cboObra.FormattingEnabled = true;
-            this.cboObra.Location = new System.Drawing.Point(81, 211);
-            this.cboObra.Name = "cboObra";
-            this.cboObra.Size = new System.Drawing.Size(244, 21);
-            this.cboObra.TabIndex = 16;
             // 
             // frmModificacionParticular
             // 

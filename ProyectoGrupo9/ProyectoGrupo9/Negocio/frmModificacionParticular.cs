@@ -43,6 +43,7 @@ namespace ProyectoGrupo9.Negocio
             agregado.ExecuteNonQuery();
             MessageBox.Show("Se cambiaron los datos del paciente correctamente");
             conexion.Close();
+            this.Close();
         }
 
         private void frmModificacionParticular_Load(object sender, EventArgs e)
@@ -86,6 +87,11 @@ namespace ProyectoGrupo9.Negocio
             combo.ValueMember = campoValor;
             combo.SelectedIndex = -1;
             combo.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void btnCancelarCambios_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

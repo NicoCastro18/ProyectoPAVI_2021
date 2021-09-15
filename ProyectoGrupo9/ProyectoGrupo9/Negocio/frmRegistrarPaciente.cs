@@ -115,6 +115,8 @@ namespace ProyectoGrupo9
             agregado.ExecuteNonQuery();
             MessageBox.Show("Se agrego el paciente correctamente");
             conexion.Close();
+            this.Close();
+            
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)

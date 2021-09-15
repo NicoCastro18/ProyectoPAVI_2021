@@ -77,6 +77,7 @@ namespace ProyectoGrupo9.Negocio
             agregado.ExecuteNonQuery();
             MessageBox.Show("Se elimino el paciente correctamente");
             conexion.Close();
+            this.Close();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
