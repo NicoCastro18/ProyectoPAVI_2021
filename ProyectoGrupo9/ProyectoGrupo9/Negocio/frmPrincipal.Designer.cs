@@ -77,7 +77,7 @@ namespace ProyectoGrupo9.Negocio
             // datosPacienteToolStripMenuItem
             // 
             this.datosPacienteToolStripMenuItem.Name = "datosPacienteToolStripMenuItem";
-            this.datosPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosPacienteToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.datosPacienteToolStripMenuItem.Text = "Buscar";
             this.datosPacienteToolStripMenuItem.Click += new System.EventHandler(this.datosPacienteToolStripMenuItem_Click);
             // 
@@ -96,7 +96,9 @@ namespace ProyectoGrupo9.Negocio
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -30,11 +30,14 @@ namespace ProyectoGrupo9
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblObraSocial = new System.Windows.Forms.Label();
+            this.cboObra = new System.Windows.Forms.ComboBox();
             this.btnCancelarIngreso = new System.Windows.Forms.Button();
             this.btnAceptarIngreso = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboCiudades = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblAltura = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,9 +53,6 @@ namespace ProyectoGrupo9
             this.lblApellido = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.cboObra = new System.Windows.Forms.ComboBox();
-            this.lblObraSocial = new System.Windows.Forms.Label();
-            this.cboCiudades = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +81,23 @@ namespace ProyectoGrupo9
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Datos Pacientes";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblObraSocial
+            // 
+            this.lblObraSocial.AutoSize = true;
+            this.lblObraSocial.Location = new System.Drawing.Point(33, 253);
+            this.lblObraSocial.Name = "lblObraSocial";
+            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
+            this.lblObraSocial.TabIndex = 14;
+            this.lblObraSocial.Text = "Obra Social";
+            // 
+            // cboObra
+            // 
+            this.cboObra.FormattingEnabled = true;
+            this.cboObra.Location = new System.Drawing.Point(161, 250);
+            this.cboObra.Name = "cboObra";
+            this.cboObra.Size = new System.Drawing.Size(244, 21);
+            this.cboObra.TabIndex = 9;
             // 
             // btnCancelarIngreso
             // 
@@ -136,6 +153,14 @@ namespace ProyectoGrupo9
             this.groupBox2.Text = "Domicilio";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // cboCiudades
+            // 
+            this.cboCiudades.FormattingEnabled = true;
+            this.cboCiudades.Location = new System.Drawing.Point(91, 75);
+            this.cboCiudades.Name = "cboCiudades";
+            this.cboCiudades.Size = new System.Drawing.Size(267, 21);
+            this.cboCiudades.TabIndex = 8;
+            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(275, 123);
@@ -166,6 +191,7 @@ namespace ProyectoGrupo9
             this.cboProvincia.Name = "cboProvincia";
             this.cboProvincia.Size = new System.Drawing.Size(267, 21);
             this.cboProvincia.TabIndex = 4;
+            this.cboProvincia.SelectedIndexChanged += new System.EventHandler(this.cboProvincia_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -264,31 +290,6 @@ namespace ProyectoGrupo9
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             this.lblNombre.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // cboObra
-            // 
-            this.cboObra.FormattingEnabled = true;
-            this.cboObra.Location = new System.Drawing.Point(161, 250);
-            this.cboObra.Name = "cboObra";
-            this.cboObra.Size = new System.Drawing.Size(244, 21);
-            this.cboObra.TabIndex = 9;
-            // 
-            // lblObraSocial
-            // 
-            this.lblObraSocial.AutoSize = true;
-            this.lblObraSocial.Location = new System.Drawing.Point(33, 253);
-            this.lblObraSocial.Name = "lblObraSocial";
-            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
-            this.lblObraSocial.TabIndex = 14;
-            this.lblObraSocial.Text = "Obra Social";
-            // 
-            // cboCiudades
-            // 
-            this.cboCiudades.FormattingEnabled = true;
-            this.cboCiudades.Location = new System.Drawing.Point(91, 75);
-            this.cboCiudades.Name = "cboCiudades";
-            this.cboCiudades.Size = new System.Drawing.Size(267, 21);
-            this.cboCiudades.TabIndex = 8;
             // 
             // frmRegistrarPaciente
             // 

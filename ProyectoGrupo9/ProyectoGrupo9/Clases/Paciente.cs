@@ -26,7 +26,7 @@ namespace ProyectoGrupo9.Clases
 
         public DataTable RecuperarTodos()
         {
-            string consulta = "select * from Pacientes";
+            string consulta = "select * from Pacientes where borrado = 0";
 
             BDHelper oDatos = new BDHelper();
             return oDatos.consultar(consulta);
@@ -40,5 +40,15 @@ namespace ProyectoGrupo9.Clases
             return oDatos.consultar(consulta);
         }
 
+        public DataTable RecuperarPorDNI(int Dni_Paciente)
+        {
+            string consulta = "SELECT dni, nombre, apellido, mail, fecha_nacimiento, provincia, ciudad, calle, altura_Calle"
+                               + " FROM Pacientes "
+                               + " WHERE borrado = 0 "
+                               + " And dni =" + Dni_Paciente;
+
+            BDHelper oDatos = new BDHelper();
+            return oDatos.consultar(consulta);
+        }
     }
 }

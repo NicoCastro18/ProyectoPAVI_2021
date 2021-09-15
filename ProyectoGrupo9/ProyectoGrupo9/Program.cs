@@ -18,9 +18,9 @@ namespace ProyectoGrupo9
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmLogin());
-            //Application.Run(new frmPrincipal());
+            Application.Run(new frmPrincipal());
             //Application.Run(new frmRegistrarPaciente());
-            Application.Run(new frmConsulta());
+            //Application.Run(new frmConsulta());
         }
     }
 }

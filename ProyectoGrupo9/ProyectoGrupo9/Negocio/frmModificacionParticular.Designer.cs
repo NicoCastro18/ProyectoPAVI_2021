@@ -32,43 +32,47 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancelarCambios = new System.Windows.Forms.Button();
             this.btnConfirmarCambios = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtAltura_Calle = new System.Windows.Forms.TextBox();
             this.lblAltura = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtCalle = new System.Windows.Forms.TextBox();
+            this.cboProvincia = new System.Windows.Forms.ComboBox();
+            this.cboCiudad = new System.Windows.Forms.ComboBox();
             this.lblCalle = new System.Windows.Forms.Label();
             this.lblProvincia = new System.Windows.Forms.Label();
             this.lblCiudad = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblDNI = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.lblObraSocial = new System.Windows.Forms.Label();
+            this.cboObra = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cboObra);
+            this.groupBox1.Controls.Add(this.lblObraSocial);
             this.groupBox1.Controls.Add(this.btnCancelarCambios);
             this.groupBox1.Controls.Add(this.btnConfirmarCambios);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtMail);
             this.groupBox1.Controls.Add(this.lblMail);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.lblDNI);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.lblApellido);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtDni);
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Location = new System.Drawing.Point(55, 25);
             this.groupBox1.Name = "groupBox1";
@@ -97,12 +101,12 @@ namespace ProyectoGrupo9.Negocio
             this.btnConfirmarCambios.UseVisualStyleBackColor = true;
             this.btnConfirmarCambios.Click += new System.EventHandler(this.btnAceptarIngreso_Click);
             // 
-            // textBox6
+            // txtMail
             // 
-            this.textBox6.Location = new System.Drawing.Point(65, 150);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtMail.Location = new System.Drawing.Point(65, 150);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(276, 20);
+            this.txtMail.TabIndex = 11;
             // 
             // lblMail
             // 
@@ -115,11 +119,11 @@ namespace ProyectoGrupo9.Negocio
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtAltura_Calle);
             this.groupBox2.Controls.Add(this.lblAltura);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.txtCalle);
+            this.groupBox2.Controls.Add(this.cboProvincia);
+            this.groupBox2.Controls.Add(this.cboCiudad);
             this.groupBox2.Controls.Add(this.lblCalle);
             this.groupBox2.Controls.Add(this.lblProvincia);
             this.groupBox2.Controls.Add(this.lblCiudad);
@@ -130,12 +134,12 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Domicilio";
             // 
-            // textBox5
+            // txtAltura_Calle
             // 
-            this.textBox5.Location = new System.Drawing.Point(275, 123);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(115, 20);
-            this.textBox5.TabIndex = 7;
+            this.txtAltura_Calle.Location = new System.Drawing.Point(275, 123);
+            this.txtAltura_Calle.Name = "txtAltura_Calle";
+            this.txtAltura_Calle.Size = new System.Drawing.Size(115, 20);
+            this.txtAltura_Calle.TabIndex = 7;
             // 
             // lblAltura
             // 
@@ -146,28 +150,28 @@ namespace ProyectoGrupo9.Negocio
             this.lblAltura.TabIndex = 6;
             this.lblAltura.Text = "Altura";
             // 
-            // textBox4
+            // txtCalle
             // 
-            this.textBox4.Location = new System.Drawing.Point(59, 123);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 20);
-            this.textBox4.TabIndex = 5;
+            this.txtCalle.Location = new System.Drawing.Point(59, 123);
+            this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Size = new System.Drawing.Size(136, 20);
+            this.txtCalle.TabIndex = 5;
             // 
-            // comboBox2
+            // cboProvincia
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(91, 34);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(267, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cboProvincia.FormattingEnabled = true;
+            this.cboProvincia.Location = new System.Drawing.Point(91, 34);
+            this.cboProvincia.Name = "cboProvincia";
+            this.cboProvincia.Size = new System.Drawing.Size(267, 21);
+            this.cboProvincia.TabIndex = 4;
             // 
-            // comboBox1
+            // cboCiudad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(91, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cboCiudad.FormattingEnabled = true;
+            this.cboCiudad.Location = new System.Drawing.Point(91, 75);
+            this.cboCiudad.Name = "cboCiudad";
+            this.cboCiudad.Size = new System.Drawing.Size(268, 21);
+            this.cboCiudad.TabIndex = 3;
             // 
             // lblCalle
             // 
@@ -213,54 +217,73 @@ namespace ProyectoGrupo9.Negocio
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha Nacimiento";
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(65, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtApellido.Location = new System.Drawing.Point(65, 119);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(276, 20);
+            this.txtApellido.TabIndex = 5;
+            this.txtApellido.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
-            this.lblDNI.Location = new System.Drawing.Point(6, 126);
+            this.lblDNI.Location = new System.Drawing.Point(6, 56);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(26, 13);
             this.lblDNI.TabIndex = 4;
             this.lblDNI.Text = "DNI";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(65, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(65, 82);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(276, 20);
+            this.txtNombre.TabIndex = 3;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(6, 85);
+            this.lblApellido.Location = new System.Drawing.Point(6, 126);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(44, 13);
             this.lblApellido.TabIndex = 2;
             this.lblApellido.Text = "Apeliido";
             // 
-            // textBox1
+            // txtDni
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtDni.Location = new System.Drawing.Point(65, 49);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(276, 20);
+            this.txtDni.TabIndex = 1;
+            this.txtDni.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(3, 56);
+            this.lblNombre.Location = new System.Drawing.Point(6, 89);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = " Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
+            // 
+            // lblObraSocial
+            // 
+            this.lblObraSocial.AutoSize = true;
+            this.lblObraSocial.Location = new System.Drawing.Point(6, 219);
+            this.lblObraSocial.Name = "lblObraSocial";
+            this.lblObraSocial.Size = new System.Drawing.Size(62, 13);
+            this.lblObraSocial.TabIndex = 15;
+            this.lblObraSocial.Text = "Obra Social";
+            // 
+            // cboObra
+            // 
+            this.cboObra.FormattingEnabled = true;
+            this.cboObra.Location = new System.Drawing.Point(81, 211);
+            this.cboObra.Name = "cboObra";
+            this.cboObra.Size = new System.Drawing.Size(244, 21);
+            this.cboObra.TabIndex = 16;
             // 
             // frmModificacionParticular
             // 
@@ -270,6 +293,7 @@ namespace ProyectoGrupo9.Negocio
             this.Controls.Add(this.groupBox1);
             this.Name = "frmModificacionParticular";
             this.Text = "frmModificacionParticular";
+            this.Load += new System.EventHandler(this.frmModificacionParticular_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -283,24 +307,26 @@ namespace ProyectoGrupo9.Negocio
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancelarCambios;
         private System.Windows.Forms.Button btnConfirmarCambios;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtAltura_Calle;
         private System.Windows.Forms.Label lblAltura;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtCalle;
+        private System.Windows.Forms.ComboBox cboProvincia;
+        private System.Windows.Forms.ComboBox cboCiudad;
         private System.Windows.Forms.Label lblCalle;
         private System.Windows.Forms.Label lblProvincia;
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblDNI;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblObraSocial;
+        private System.Windows.Forms.ComboBox cboObra;
     }
 }

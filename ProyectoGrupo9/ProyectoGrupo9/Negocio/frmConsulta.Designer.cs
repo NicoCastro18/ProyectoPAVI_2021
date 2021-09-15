@@ -105,9 +105,10 @@ namespace ProyectoGrupo9.Negocio
             this.dgvPacienteFiltrado.Location = new System.Drawing.Point(6, 19);
             this.dgvPacienteFiltrado.Name = "dgvPacienteFiltrado";
             this.dgvPacienteFiltrado.ReadOnly = true;
+            this.dgvPacienteFiltrado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPacienteFiltrado.Size = new System.Drawing.Size(859, 194);
             this.dgvPacienteFiltrado.TabIndex = 2;
-            this.dgvPacienteFiltrado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBugs_CellContentClick);
+            this.dgvPacienteFiltrado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacienteFiltrado_CellClick);
             // 
             // colum_ID
             // 
@@ -192,6 +193,7 @@ namespace ProyectoGrupo9.Negocio
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros de Busqueda";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnBuscarPorFiltro
             // 

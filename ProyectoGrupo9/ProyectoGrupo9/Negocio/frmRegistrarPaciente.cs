@@ -121,5 +121,10 @@ namespace ProyectoGrupo9
         {
 
         }
+
+        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
